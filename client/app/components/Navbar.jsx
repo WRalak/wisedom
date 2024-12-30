@@ -6,6 +6,7 @@ import { MdArrowOutward } from "react-icons/md";
 import { IoIosClose } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaCheck } from "react-icons/fa";
+import LoginForm from "./LoginForm";
 
 
 
@@ -28,12 +29,12 @@ const Navbar = () => {
     <nav className="backdrop-blur-md bg-white/70 w-full fixed top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
         {/* Logo */}
-        <div className="text-transparent bg-clip-text bg-gradient-to-r from-[#F43F5E] to-[#3B82F6] font-sans italic text-sm md:text-xl font-bold lg:ml-60">
+        <div className="text-transparent bg-clip-text bg-gradient-to-r from-[#F43F5E] to-[#3B82F6] font-sans italic text-sm md:text-xl font-bold lg:ml-60 lg:text-base 2xl:ml-80 2xl:text-lg">
           WISE
         </div>
 
         {/* Menu for larger screens */}
-        <div className="hidden md:flex items-center space-x-6 lg:mr-52">
+        <div className="hidden md:flex items-center space-x-6 lg:mr-52 2xl:mr-80">
           <Link href="/">
             <p className="text-black text-sm">Home</p>
           </Link>
@@ -90,7 +91,7 @@ const Navbar = () => {
         </div>
 
         {/* Right section */}
-        <div className="hidden md:flex items-center space-x-4 lg:mr-9">
+        <div className="hidden md:flex items-center space-x-4 lg:mr-20">
           <Link href="/contact">
             <p className="text-black text-xs">Contact Us</p>
           </Link>

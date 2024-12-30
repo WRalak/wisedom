@@ -6,47 +6,47 @@ import { BiBone } from "react-icons/bi";
 
 const HeroTwo = () => {
   return (
-    <section className="w-full bg-blue-500 py-10 lg:py-14">
+    <section className="w-full bg-blue-500 py-6 lg:py-8">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         {/* Heading */}
-        <p className="text-sm sm:text-base font-medium text-white mb-6 lg:mb-8 lg:ml-[310px] text-center lg:text-left">
+        <p className="text-sm sm:text-xs font-medium text-white mb-6 lg:mb-8 lg:ml-[300px] text-center lg:text-left">
           What type of therapy are you looking for?
         </p>
 
         {/* Icons and Descriptions */}
-        <div className="lg:ml-[310px]">
+        <div className="lg:ml-[300px]">
           <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-white">
             {/* Icon 1 */}
             <div className="flex items-center gap-2">
-              <IoMdPeople size={20} />
-              <p className="text-xs sm:text-sm">Socialization</p>
+              <IoMdPeople size={15} />
+              <p className="text-xs sm:text-xs">Socialization</p>
             </div>
 
             {/* Divider */}
-            <span className="hidden sm:block text-white text-sm">|</span>
+            <span className="hidden sm:block text-white text-xs">|</span>
 
             {/* Icon 2 */}
             <div className="flex items-center gap-2">
-              <TbToolsKitchen3 size={20} />
-              <p className="text-xs sm:text-sm">Light Household Chores</p>
+              <TbToolsKitchen3 size={15} />
+              <p className="text-xs sm:text-xs">Light Household Chores</p>
             </div>
 
             {/* Divider */}
-            <span className="hidden sm:block text-white text-sm">|</span>
+            <span className="hidden sm:block text-white text-xs">|</span>
 
             {/* Icon 3 */}
             <div className="flex items-center gap-2">
-              <FaTruck size={20} />
-              <p className="text-xs sm:text-sm">Transportation</p>
+              <FaTruck size={15} />
+              <p className="text-xs sm:text-xs">Transportation</p>
             </div>
 
             {/* Divider */}
-            <span className="hidden sm:block text-white text-sm">|</span>
+            <span className="hidden sm:block text-white text-xs">|</span>
 
             {/* Icon 4 */}
             <div className="flex items-center gap-2">
-              <BiBone size={20} />
-              <p className="text-xs sm:text-sm">Pet Care</p>
+              <BiBone size={15} />
+              <p className="text-xs sm:text-xs">Pet Care</p>
             </div>
           </div>
         </div>

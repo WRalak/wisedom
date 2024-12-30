@@ -4,7 +4,7 @@ import QuoteSection from './quoteSection';
 const MidTable = () => {
   return (
     <section className="bg-gray-50 py-16">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 2xl:px-24 lg:ml-[330px] 2xl:ml-[730px]">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 2xl:px-24 lg:ml-[330px] 2xl:ml-[880px] 2xl:text-sm">
         <div className="grid gap-8 sm:gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
           {/* Left Section */}
           <div className="text-center sm:text-left">
