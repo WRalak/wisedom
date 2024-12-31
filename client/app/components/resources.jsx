@@ -54,7 +54,7 @@ export default function ExampleSection() {
   ];
 
   return (
-    <section className="px-4 lg:ml-[330px] lg:mr-[px] sm:px-8 lg:px-16 py-8">
+    <section className="px-4 lg:ml-[330px] lg:mr-[70px] 2xl:ml-[800px] 2xl:mr-[200px] sm:px-8 lg:px-16 py-8">
       {/* Features Section */}
       <div className="mb-12">
         <h2 className="text-xl sm:text-3xl font-bold text-gray-800">
@@ -85,7 +85,7 @@ export default function ExampleSection() {
     in the world of corporate training. Together, we&apos;ll make a profound impact on <br className="hidden md:block" /> professional
     growth and learning. Join us now and embark on an empowering <br className="hidden md:block" /> journey with WISE Companion!
   </p>
-  <button className="flex items-center bg-blue-500 text-white rounded py-2 px-4 mt-2 text-xs ">
+  <button className="flex items-center bg-blue-300 text-white rounded py-2 px-4 mt-2 text-xs ">
     Get Started
     <MdArrowOutward size={15} className="ml-2" />
   </button>

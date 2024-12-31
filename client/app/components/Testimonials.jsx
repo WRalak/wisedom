@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { FaStar } from "react-icons/fa";
 import Image from "next/image";
@@ -29,25 +29,25 @@ export default function Testimonials() {
     },
   ];
 
-  // State to keep track of the current testimonial index
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // State to track the current testimonial index
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
-  // Function to change the current testimonial based on index
+  // Function to handle dot click
   const handleDotClick = (index) => {
-    setCurrentIndex(index);
+    setCurrentTestimonial(index);
   };
 
   return (
-    <section className="w-full flex flex-col lg:flex-row bg-gray-50 py-12 overflow-hidden">
-      {/* Left Section */}
-      <div className="px-8 lg:px-24 mb-8 lg:mb-0 flex-1 lg:ml-[250px]">
-        <h3 className="text-3xl sm:text-3xl font-bold text-gray-800 leading-tight">
+    <section className="w-full flex items-start bg-white mt-10 py-12 px-8 lg:px-24">
+      {/* Title Section */}
+      <div className="flex flex-col max-w-md space-y-4 w-1/4 mr-12 2xl:ml-[400px]">
+        <h2 className="text-4xl font-bold text-gray-950 leading-tight">
           What Our People <br /> Are Saying
-        </h3>
-        <p className="text-gray-950 text-xs sm:text-xs leading-relaxed mt-4">
-          Don’t just take our word for it. Hear it from <br /> more than 20+ families.
+        </h2>
+        <p className="text-gray-950 text-sm leading-relaxed">
+          Don’t just take our word for it. Hear it from more than 20+ families.
         </p>
-        <div className="flex items-center mt-6 space-x-4">
+        <div className="flex items-center space-x-4">
           <div className="flex space-x-1">
             {[...Array(5)].map((_, i) => (
               <FaStar key={i} className="text-orange-500 text-base" />
@@ -59,11 +59,13 @@ export default function Testimonials() {
         </div>
       </div>
 
-      {/* Right Section - Testimonials */}
-      <div className="overflow-hidden px-8 lg:px-16">
-        {/* Display current testimonial */}
-        <div className="flex justify-center">
-          <div className="p-6 flex flex-col items-start max-w-xs sm:max-w-sm lg:max-w-xs">
+      {/* Testimonials Section */}
+      <div className="flex w-full space-x-8 overflow-x-auto">
+        {testimonials.map((testimonial, index) => (
+          <div
+            key={index}
+            className="p-6 flex-shrink-0 flex flex-col items-start max-w-xs rounded-lg bg-white"
+          >
             {/* Stars */}
             <div className="flex">
               {[...Array(5)].map((_, i) => (
@@ -72,48 +74,28 @@ export default function Testimonials() {
             </div>
 
             {/* Description */}
-            <p
-              className="text-gray-600 text-xs sm:text-xs mt-2"
-              style={{ whiteSpace: "pre-line" }}
-            >
-              {testimonials[currentIndex].description}
-            </p>
+            <p className="text-gray-600 text-sm mt-2">{testimonial.description}</p>
 
             {/* Image and Info */}
             <div className="flex items-center mt-4">
               <div className="w-16 h-16 rounded-full overflow-hidden">
                 <Image
-                  src={testimonials[currentIndex].image}
-                  alt={`${testimonials[currentIndex].name} Image`}
+                  src={testimonial.image}
+                  alt={`${testimonial.name} Image`}
                   width={64}
                   height={64}
                   className="object-cover"
                 />
               </div>
               <div className="ml-4">
-                <h4 className="text-sm sm:text-sm font-semibold text-gray-800">
-                  {testimonials[currentIndex].name}
+                <h4 className="text-sm font-semibold text-gray-800">
+                  {testimonial.name}
                 </h4>
-                <p className="text-gray-600 text-xs sm:text-sm">
-                  {testimonials[currentIndex].country}
-                </p>
+                <p className="text-gray-600 text-sm">{testimonial.country}</p>
               </div>
             </div>
           </div>
-        </div>
-        
-        {/* Dots for navigation */}
-        <div className="flex justify-center mt-6 space-x-2">
-          {testimonials.map((_, index) => (
-            <div
-              key={index}
-              onClick={() => handleDotClick(index)}
-              className={`w-3 h-3 rounded-full cursor-pointer ${
-                currentIndex === index ? "bg-blue-500" : "bg-gray-400"
-              }`}
-            />
-          ))}
-        </div>
+        ))}
       </div>
     </section>
   );
