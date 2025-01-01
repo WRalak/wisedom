@@ -82,7 +82,7 @@ const Navbar = () => {
           <Link href="/resources">
             <p className="text-black text-xs">Resources</p>
           </Link>
-          <Link href="/support">
+          <Link href="#support">
             <p className="text-black text-xs">Support</p>
           </Link>
           <Link href="/careers">
@@ -92,7 +92,7 @@ const Navbar = () => {
 
         {/* Right section */}
         <div className="hidden md:flex items-center space-x-4 lg:mr-20">
-          <Link href="/contact">
+          <Link href="#contact-us">
             <p className="text-black text-xs">Contact Us</p>
           </Link>
           <Link href="/login">

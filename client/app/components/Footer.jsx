@@ -13,6 +13,8 @@ const Footer = () => {
   return (
     <footer className="flex flex-col">
       {/* Dark Section */}
+      
+      <div id="support"> 
       <div className="bg-gray-800 text-white py-10 px-6">
         <div className="max-w-screen-2xl mx-auto lg:ml-[330px] 2xl:ml-[730px]">
           <p className="mb-6 text-xs sm:text-xs lg:text-xs text-center sm:text-left">
@@ -32,10 +34,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      </div>
 
       {/* White Section */}
       <div className="bg-white py-16 px-6">
-        <div className="max-w-screen-2xl mx-auto lg:ml-[330px] 2xl:ml-[730px]">
+        <div   className="max-w-screen-2xl mx-auto lg:ml-[330px] 2xl:ml-[730px]">
           {/* GET IN TOUCH Section */}
           <h1 className="text-xs sm:text-xs lg:text-sm text-gray-500 mb-4 text-center sm:text-left">
             GET IN TOUCH
@@ -71,7 +74,7 @@ const Footer = () => {
 
           {/* LOCATION, NAVIGATION, PARTNERS */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center sm:text-left">
-            <div>
+            <div id="contact-us">
               <h3 className="text-gray-500 text-xs sm:text-xs lg:text-sm mb-3">LOCATION</h3>
               <p className="text-xs sm:text-sm lg:text-sm text-black">
                 2578 Broadway #607<br />

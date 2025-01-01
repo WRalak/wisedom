@@ -169,7 +169,7 @@ const WellnessInstitute = () => {
               </div>
             ))}
           </div>
-          <p className="text-xs text-blue-500 font-semibold flex justify-center items-center gap-1 lg:justify-start lg:ml-[395px]">
+          <p className="text-xs text-blue-500 font-semibold flex justify-center items-center gap-1 lg:justify-start lg:ml-[395px] 2xl:ml-[540px] ">
       See more <MdArrowOutward size={13} />
     </p>
         </div>
